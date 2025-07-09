@@ -47,7 +47,7 @@ if {$ARGUMENT2 eq ""} {
 source ./parse_board_name.tcl
 
 set MODULE_NAME OPENOFDM_RX
-set  fd  [open  "./verilog/openofdm_rx_pre_def.v"  w]
+set  fd  [open  "./verilog/openofdm_rx_pre_def.v"  a]
 if {$NUM_CLK_PER_US == 100} {
   puts $fd "`define CLK_SPEED_100M"
 } elseif {$NUM_CLK_PER_US == 200} {
