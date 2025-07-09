@@ -77,11 +77,11 @@ module signal_watchdog
   `DEBUG_PREFIX wire [16:0] phase_offset_abs;
   `DEBUG_PREFIX reg sync_short_phase_offset_monitor_rst;
 
-	wire event0;
-	wire event1;
-	wire event2;
-	wire event3;
-	wire event4;
+  `DEBUG_PREFIX wire event0;
+  `DEBUG_PREFIX wire event1;
+  `DEBUG_PREFIX wire event2;
+  `DEBUG_PREFIX wire event3;
+  `DEBUG_PREFIX wire event4;
 	reg event0_delay;
 	reg event1_delay;
 	reg event2_delay;
