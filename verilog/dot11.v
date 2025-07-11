@@ -165,8 +165,8 @@ always @(posedge clock) begin
     end else begin
         equalizer_state_reg <= equalizer_state;
         if (state_changed) begin
-            state_history[3:0] <= state;
-            state_history[31:4] <= state_history[27:0];
+            state_history[4:0] <= state;
+            state_history[31:5] <= state_history[26:0];
         end 
     end
 end
